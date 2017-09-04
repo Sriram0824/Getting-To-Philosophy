@@ -10,5 +10,6 @@ Ignoring external links, links to the current page, or red links (links to non-e
 Stopping when reaching "Philosophy", a page with no links or a page that does not exist, or when a loop occurs
 
 NOTE: We used the mysql database to store the number of hops and the path taken. So to see this properly working change the Username, Password and database name in the Store_DB function inside the ParseURL.php file. Also I am including the phil.SQL file where you can use it to import the table structure to your mysql database.
+ After that use RequestData.html to give the input as WIKI URL and you can see the result(No. of hops, Path taken to reach the Philosophy page).
 
 Technologies Used: PHP, MySQL, HTML, CSS, Javascript, AJAX, jQuery.
