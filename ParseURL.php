@@ -84,10 +84,10 @@ function find_First_Link($url)
 function store_DB($hops, $path, $flag)
 {
     // Connect to database server
-    $connection = mysqli_connect("localhost", "root", "") or die(mysqli_error());
+    $connection = mysqli_connect("localhost", "username", "password") or die(mysqli_error());
     
     // Select database
-    mysqli_select_db($connection, 'philosophy') or die("Error in Connection");
+    mysqli_select_db($connection, 'DBName') or die("Error in Connection");
     
     $sql = "INSERT INTO `phil`( `hops`, `path`,`reachable`) VALUES ('$hops','$path','$flag')";
     
